@@ -57,6 +57,8 @@ pip install -e .
 cp .env.example .env
 ```
 
+`pip install -e .` uses explicit setuptools package discovery to include `functions*` and exclude `calculator*`.
+
 Set these values in `.env`:
 - `GEMINI_API_KEY` — get yours from [Google AI Studio](https://aistudio.google.com/app/apikey)
 
@@ -96,7 +98,7 @@ Potential future improvements:
 ## Repository Structure
 
 ```text
-aiagent/
+ai-agent/
   main.py
   call_function.py
   config.py
