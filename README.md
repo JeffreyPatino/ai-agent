@@ -1,4 +1,4 @@
-# AI Coding Agent (Gemini + Vertex AI)
+# AI Coding Agent (Gemini API)
 
 A lightweight, tool-using Python agent built while following along with this YouTube course:
 https://www.youtube.com/watch?v=YtHdaXuOAks
@@ -26,7 +26,7 @@ All tool paths are constrained to a configured working directory (`calculator/`)
 ## Architecture (High-Level)
 
 - `main.py`
-  - initializes Gemini client (Vertex AI)
+  - initializes Gemini client (Gemini API)
   - sends prompt + tool schemas
   - runs the function-calling loop
 - `call_function.py`
@@ -42,7 +42,7 @@ All tool paths are constrained to a configured working directory (`calculator/`)
 - Python 3.12+
 - `google-genai`
 - `python-dotenv`
-- Vertex AI (Gemini model)
+- Gemini API (`gemini-2.5-pro`)
 
 ## Setup
 
@@ -58,10 +58,9 @@ cp .env.example .env
 ```
 
 Set these values in `.env`:
-- `GOOGLE_CLOUD_PROJECT`
-- `GOOGLE_CLOUD_LOCATION`
+- `GEMINI_API_KEY` — get yours from [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-You also need authenticated GCP credentials locally (for Vertex AI).
+No GCP project or local credentials needed.
 
 ## Run
 
