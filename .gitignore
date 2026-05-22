@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and OS artifacts
+.idea/
+.DS_Store
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log
